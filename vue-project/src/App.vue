@@ -1,11 +1,16 @@
 <template>
   <div class="app-content">
-    <Home />
+    <nav>
+      <RouterLink to="/">Go to Home</RouterLink>
+      <RouterLink to="/sideBar">Go to SideBar</RouterLink>
+    </nav>
+    <main>
+      <RouterView />
+    </main>
   </div>
 </template>
 
 <script setup lang="ts">
-import Home from './components/home.vue'
 </script>
 
 <style scoped></style>
